@@ -32,8 +32,8 @@ function randomData(){
 	var data1 = random_alpha.concat(random_num); 
 	var data2 = data1.concat(random_special_ch);
 	for (i=0;i<captcha_length;i++){
-        captcha_str += data2[Math.floor((Math.random() * captcha_length-1)+1)];
-        //captcha_str += data2[i]; 
+        captcha_str += data2[Math.floor((Math.random() * data2.length-1)+1)];
+        
     }
 }
 
